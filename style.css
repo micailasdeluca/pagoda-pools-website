@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  background: white;
+  color: #102a43;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  background: white;
+  color: #073763;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  color: #0077cc;
+  font-size: 28px;
+}
+
+.navbar a {
+  color: #073763;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.hero {
+    min-height: 90vh;
+    background-image: linear-gradient(
+    rgba(0, 35, 90, 0.35),
+    rgba(0, 80, 160, 0.25)
+), url("images/hero-pool.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    color: white;
+}
+
+.hero-text {
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 72px;
+    line-height: 1.05;
+    margin: 15px 0 25px;
+    color: white;
+}
+
+.hero p {
+    font-size: 21px;
+    max-width: 650px;
+    color: white;
+}
+
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #dff6ff;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.main-btn {
+    background: white;
+    color: #005bbb;
+}
+
+.second-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-btn {
+  background: white;
+  color: #005bbb;
+}
+
+.second-btn {
+  border: 2px solid white;
+  color: white;
+}
+.services {
+    padding: 80px 8%;
+    background: #eef6ff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 56px;
+    color: #073763;
+    margin-bottom: 60px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #dbe8ff;
+    padding: 60px 40px;
+    border-radius: 24px;
+    box-shadow: 0 15px 30px rgba(0,0,0,.08);
+    transition: .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,.12);
+}
+
+.service-card h3 {
+    font-size: 28px;
+    color: #005bbb;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #334e68;
+}
+
+@media (max-width: 900px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.about {
+  padding: 100px 8%;
+  background: white;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 45px;
+  color: #073763;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.blue {
+  color: #0077cc;
+}
+
+.about-card {
+  background: white;
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.1);
+}
+
+.about-card h3 {
+  color: #0077cc;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-card li {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.about-card li::before {
+  content: "✓ ";
+  color: #0077cc;
+  font-weight: bold;
+}
+.gallery {
+    padding: 80px 8%;
+    background: #eef6ff;
+    text-align: center;
+}
+
+.gallery .small-title {
+    color: #4a74d9;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.gallery h2 {
+    font-size: 56px;
+    color: #073763;
+    margin: 20px 0 60px;
+}
+
+.before-after-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,.08);
+    transition: .3s ease;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 45px rgba(0,0,0,.12);
+}
+
+.project img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+    .before-after-showcase {
+        grid-template-columns: 1fr;
+    }
+}
+.logo {
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #005bbb;
+}
+.store-section {
+    padding: 100px 8%;
+    background: #073763;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    color: white;
+}
+
+.store-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+.store-text h2 {
+    font-size: 46px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.store-text p {
+    font-size: 19px;
+    margin-bottom: 22px;
+    color: white;
+}
+
+.store-btn {
+    display: inline-block;
+    background: white;
+    color: #005bbb;
+    padding: 14px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #004aad, #00aaff);
+    color: white;
+}
+
+.contact h2 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    margin-top: 35px;
+}
+
+@media (max-width: 900px) {
+    .store-section {
+        grid-template-columns: 1fr;
+    }
+
+    .store-image img {
+        height: 380px;
+    }
+}
+.top-bar {
+    background: #1f3b73;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar,
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .services,
+  .gallery,
+  .store-section,
+  .store-text {
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .store-btn,
+  button,
+  a {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+}
